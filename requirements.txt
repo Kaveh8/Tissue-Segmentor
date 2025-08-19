@@ -1,0 +1,13 @@
+numpy>=1.21
+Pillow>=9.2
+tifffile>=2021.7.2
+
+# PyTorch + TorchVision (version-pinned to a compatible pair)
+torch>=2.2,<2.3
+torchvision>=0.17,<0.18
+
+# Machine Learning
+scikit-learn>=1.1
+scipy>=1.9.0
+shapely>=2.0
+
