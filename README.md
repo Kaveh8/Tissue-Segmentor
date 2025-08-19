@@ -2,7 +2,7 @@
 
 A compact toolkit to cluster histology whole‑slide images into tissue classes using tile embeddings and KMeans. It supports TIFF/PNG/JPG directly, and Leica SCN via on‑the‑fly conversion to a high‑resolution TIFF.
 
-![Tissue Clustering GUI](./ui.png)
+<p align="center"><img src="./ui.png" alt="Tissue Clustering GUI" width="640"/></p>
 
 ---
 
@@ -103,6 +103,9 @@ Notes:
 - Overlay image: `*_overlay_<model>.png` – Original image blended with class colors.
 - Segmentation map: `*_segmentation_<model>.png` – Colorized tile‑grid segmentation (with legend showing counts and percentages).
 - QuPath annotations: `*_qupath_annotations_<model>.geojson` – Class regions as polygons colored per class.
+
+### Example output
+<p align="center"><img src="./tissue.png" alt="Example tissue clustering output" width="640"/></p>
 
 ### Importing GeoJSON into QuPath
 - Open the slide in QuPath
