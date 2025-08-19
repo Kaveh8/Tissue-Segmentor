@@ -17,7 +17,7 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 ### 2) Install dependencies
 ```bash
 pip install --upgrade pip
-pip install -r "necrosis project/requirements.txt"
+pip install -r "requirements.txt"
 ```
 
 Notes:
@@ -30,7 +30,7 @@ Notes:
 
 ### Run the GUI (recommended)
 ```bash
-python "necrosis project/tissue_clustering_gui.py"
+python tissue_clustering_gui.py
 ```
 
 Steps:
@@ -44,7 +44,7 @@ Outputs are written next to the input file, or to `--output_dir` if provided in 
 
 ### Run from the command line
 ```bash
-python "necrosis project/tissue_clustering.py" \
+python tissue_clustering.py \
   --input /path/slide.tiff \
   --patch_size 64 \
   --clusters 3 \
@@ -53,7 +53,7 @@ python "necrosis project/tissue_clustering.py" \
 
 SCN input:
 ```bash
-python "necrosis project/tissue_clustering.py" --input /path/slide.scn
+python tissue_clustering.py --input /path/slide.scn
 ```
 The script converts `.scn` to `<stem>_highres.tiff` once, then processes that TIFF.
 
@@ -106,7 +106,7 @@ Notes:
 
 ### Importing GeoJSON into QuPath
 - Open the slide in QuPath
-- Menu: Objects → Import objects → GeoJSON
+- Menu: Objects (or File, depends on version) → Import objects → GeoJSON
 - Select `*_qupath_annotations_<model>.geojson`
 - Regions appear as annotations; class colors and names are included.
 
