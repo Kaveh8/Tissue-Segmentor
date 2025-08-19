@@ -2,8 +2,6 @@
 
 A compact toolkit to cluster histology whole‑slide images into tissue classes using tile embeddings and KMeans. It supports TIFF/PNG/JPG directly, and Leica SCN via on‑the‑fly conversion to a high‑resolution TIFF.
 
-Developed by Kaveh Shahhosseini (K.Shahhosseini@tees.ac.uk)
-
 ---
 
 ## Installation
